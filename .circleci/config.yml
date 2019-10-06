@@ -1,4 +1,8 @@
 version: 2.1
 orbs:
-  slack: circleci/slack@0.1.0
-  heroku: circleci/heroku@0.0.1
+    hello: circleci/hello-build@0.0.5
+
+workflows:
+    "Hello Workflow":
+        jobs:
+          - hello/hello-build
