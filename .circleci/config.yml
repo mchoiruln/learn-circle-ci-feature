@@ -1,8 +1,4 @@
 version: 2.1
-jobs:
-  myjob:
-    docker:
-      - image: "circleci/node:11"
-    steps:
-      - myorb/sayhello:
-          to: "Me"
+orbs:
+  slack: circleci/slack@0.1.0
+  heroku: circleci/heroku@0.0.1
